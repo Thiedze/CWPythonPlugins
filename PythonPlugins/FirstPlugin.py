@@ -1,16 +1,10 @@
-'''
-Created on Nov 19, 2014
+from PythonPlugins import Plugin
 
-@author: thiems
-'''
+class FirstPlugin(Plugin.Plugin):
 
-class Plugin:
     def __init__(self):
         print "plugin Test: constructor"
 
-    def cb(self):
-        print "plugin Test: callback"
-        
     def setCallback(self, callbackFunction):
         callbackFunction(self.Text)
         
